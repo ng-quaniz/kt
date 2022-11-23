@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/art2">
+
+    <ImageButton
+        android:id="@+id/supback"
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back" />
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/br_singup">
+
+        <TextView
+            android:id="@+id/tvsu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Sign up"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edname"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/tvsu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:hint="Fullname" />
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/edname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:inputType="textEmailSubject"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/edphone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/edmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:inputType="phone"
+            android:hint="Phone number" />
+
+        <EditText
+            android:id="@+id/edpass"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/edphone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:drawableEnd="@drawable/hpw"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/cracc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/edpass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bt_signup"
+            android:hint="Create account"
+            android:textColorHint="@color/white"
+            android:textSize="25dp" />
+    </RelativeLayout>
+</RelativeLayout>

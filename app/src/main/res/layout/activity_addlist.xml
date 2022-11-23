@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brpp"
+    >
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/edname"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:hint="Fullname"
+        />
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:id="@+id/edimg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/edname"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/br_img"
+        android:src="@drawable/addimage" />
+
+
+    <EditText
+        android:id="@+id/edtitle"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/edimg"
+        android:layout_centerHorizontal="true"
+        android:width="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/et_title"
+        android:gravity="top"
+        android:hint="Title"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bt_signup"
+        android:hint="Add"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+
+
+
+</RelativeLayout>

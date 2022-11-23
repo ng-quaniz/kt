@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/login" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/art" />
+
+    <EditText
+        android:id="@+id/etu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="306dp"
+        android:layout_marginEnd="40dp"
+
+        android:hint=" Phone number or email" />
+
+    <EditText
+        android:id="@+id/etp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/etu"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/hpw"/>
+
+    <TextView
+        android:id="@+id/tvfg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etp"
+        android:text="Forgot password?"
+        android:textSize="15sp"
+        android:textColor="@color/dodgerbblue"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="114dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:id="@+id/btsignin"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bt_signin"
+            android:hint="Sign in"
+            android:textColorHint="#000000"
+            android:textSize="35dp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvsup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/a"
+            android:text="Sign up"
+            android:textSize="20sp"
+            android:textColor="@color/dodgerbblue"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
